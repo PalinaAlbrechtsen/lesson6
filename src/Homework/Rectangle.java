@@ -20,14 +20,14 @@ public class Rectangle {
         return lowerRight;
     }
 
-    public static double getSquare(Point upperLeft, Point lowerRight){
+    public double getSquare(Point upperLeft, Point lowerRight){
         int sideOfRectangle = abs(upperLeft.getX() - lowerRight.getX());
         double distanceBetweenPoints = upperLeft.distance(lowerRight);
 
         return sideOfRectangle * sqrt(pow(distanceBetweenPoints, 2) - pow(sideOfRectangle, 2));
     }
 
-    public static double getDiagonal(Point upperLeft, Point lowerRight){
+    public double getDiagonal(Point upperLeft, Point lowerRight){
 
         return upperLeft.distance(lowerRight);
     }
